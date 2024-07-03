@@ -1,0 +1,153 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    background-color:rgb(1, 56, 10);
+    color: white;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(223, 223, 27);
+}
+
+p, a, ul li {
+    font-family: 'Courier New', Courier, monospace;
+    color: white!important;
+}
+
+.pdf {
+    color: rgb(251, 255, 0);
+}
+
+.imglogo {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.liist li {
+    font-family: 'Courier New', Courier, monospace !important;
+    color: white !important;
+}
+
+.navv {
+    background-color: #088118;
+}
+
+#myimg {
+    border: none;
+    width: 90%;
+    height: 50vh;
+    border-radius: 10px;
+    margin-top: 10px;
+    outline: 1px solid rgb(6, 190, 6);
+}
+
+.section1 {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+main {
+    background-color:  rgb(1, 56, 10);
+    padding: 2rem 0;
+    height: 60vh;
+}
+
+.slide-container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+section::-webkit-scrollbar{
+    height: 5px;
+    width: 2px;
+    border: 1px solid #e5d5e5;
+    background-color: #e5d5e5;
+}
+
+section::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0 0 6px rgba(0,0,0,.3);
+}
+
+section::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    outline: 1px solid #eee;
+}
+
+ .image {
+  flex: 0 0 auto;
+  object-fit: cover;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 3px;
+  overflow: hidden;
+  transform: scale(.95);
+  transition: all .3s;
+}
+
+.image img {
+    height: 50vh;
+}
+
+.image img:hover {
+    transition: scale(1);
+}
+
+.project {
+    border: none;
+    border-left: 3px solid whitesmoke;
+    height: auto;
+    margin-left: 5px;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #088118; 
+}
+
+#proimg img{
+          width:90%;
+          height: 30vh;
+}
+
+@media screen and (min-width:650px) {
+     .section1 {
+        grid-template-columns: 45% 45%;
+        grid-column-gap: 100px;
+     }
+
+     #aboutme {
+        margin-top: 150px;
+     }
+
+    #myimg {
+        width:70%;
+        
+    }
+}
+
+@media screen and (min-width:500px) {
+
+    #aboutme {
+       margin-top: 100px;
+    }
+
+}
+    
