@@ -1,11 +1,14 @@
 * {
     margin:0;
     padding: 0;
+   
 }
 
 body {
     background-color:rgb(1, 56, 10);
     color: white;
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 h1, h2, h3, h4, strong {
@@ -16,6 +19,11 @@ h1, h2, h3, h4, strong {
 p, a, ul li {
     font-family: 'Courier New', Courier, monospace;
     color: white!important;
+}
+
+#skills{
+    margin-left: 18px;
+    margin-right: 18px;
 }
 
 .pdf {
@@ -45,10 +53,7 @@ p, a, ul li {
     margin-top: 10px;
     outline: 1px solid rgb(6, 190, 6);
 }
-.image img{
-    width:80%;
-    height: 70vh !important;
-}
+
 .project {
     border: none;
     border-left: 3px solid whitesmoke;
@@ -66,6 +71,80 @@ footer {
           height: 25vh;
 }
 
+
+.contain {
+    max-width: 900x;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+button {
+    background-color: ghostwhite;
+    color: #088118!important;
+    border: none;
+    border-radius: 50px;
+    width: auto;
+    height: auto;
+    padding: 0 5px;
+}
+
+.main {
+    background-color: rgb(1, 56, 10);
+    padding: 3rem 0;
+}
+
+.slide-contain{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+section {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    
+}
+
+section::-webkit-scrollbar{
+    height: 5px;
+    width: 2px;
+    border: 1px solid grey;
+    background-color: grey;
+}
+
+section::-webkit-scrollbar-track{
+   --webkit-box-shadow: inset 0 0 6px rgba(1, 56, 10, .3);
+}
+
+section::-webkit-scrollbar-thumb{
+    background-color: #088118;
+    outline: 1px solid ghostwhite;
+}
+
+section .thumb {
+    flex: 0 0 auto;
+    object-fit: cover;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+    height: 60vh;
+}
+
+section .thumb:hover {
+    transform: scale(1);
+}
+
+
 @media screen and (min-width:650px) {
      .section1 {
         grid-template-columns: 45% 45%;
@@ -80,10 +159,7 @@ footer {
         width:70%;
         
     }
-    .image img{
-        width:50%;
-        height: 50vh !important;
-    }
+    
 }
 
 @media screen and (min-width:500px) {
