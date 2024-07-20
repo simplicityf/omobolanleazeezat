@@ -21,7 +21,7 @@ const maxScrollLeft = slider.scrollWidth - slider.clientWidth;
  //pause slider on hover
  for(let i=0; i<thumb.length; i++){
     thumb[i].addEventListener("mouseover", () =>{
-        clearInterval(play)
+        clearInterval(play);
     })
     thumb[i].addEventListener("mouseout", () =>{
         return play = setInterval(autoPlay, 10);

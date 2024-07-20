@@ -1,24 +1,24 @@
 * {
     margin:0;
     padding: 0;
-   
 }
 
 body {
-    background-color:rgb(1, 56, 10);
-    color: white;
-    margin-left: 18px;
-    margin-right: 18px;
+    background-color: rgb(228, 247, 234);
+    color:  black;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, strong {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(223, 223, 27);
+    color:  rgb(1, 56, 10);
 }
 
 p, a, ul li {
     font-family: 'Courier New', Courier, monospace;
-    color: white!important;
+    color:  rgb(1, 56, 10)!important;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 #skills{
@@ -27,7 +27,7 @@ p, a, ul li {
 }
 
 .pdf {
-    color: rgb(251, 255, 0);
+    color: rgb(1, 56, 10);
 }
 
 .imglogo {
@@ -38,11 +38,7 @@ p, a, ul li {
 
 .liist li {
     font-family: 'Courier New', Courier, monospace !important;
-    color: white !important;
-}
-
-.navv {
-    background-color: #088118;
+    color: black !important;
 }
 
 #myimg {
@@ -51,7 +47,6 @@ p, a, ul li {
     height: 50vh;
     border-radius: 10px;
     margin-top: 10px;
-    outline: 1px solid rgb(6, 190, 6);
 }
 
 .project {
@@ -66,8 +61,8 @@ footer {
     background-color: #088118; 
 }
 
-#proimg img{
-          width: 200px;;
+.proimg img{
+          width: 80%;
           height: 25vh;
 }
 
@@ -85,11 +80,27 @@ button {
     border-radius: 50px;
     width: auto;
     height: auto;
-    padding: 0 5px;
+    padding:5px 10px;
+    font-weight: bold;
+    border-left: 3px solid #088118;
+    border-right: 3px solid #088118;
+}
+
+.button {
+    background-color: ghostwhite;
+    color: #088118!important;
+    border: none;
+    border-radius: 50px;
+    width: auto;
+    height: auto;
+    padding:5px 10px;
+    font-weight: bold;
+    border-left: 3px solid #088118;
+    border-right: 3px solid #088118;
 }
 
 .main {
-    background-color: rgb(1, 56, 10);
+    background-color:rgb(228, 247, 234);
     padding: 3rem 0;
 }
 
@@ -144,6 +155,27 @@ section .thumb:hover {
     transform: scale(1);
 }
 
+.bola {
+    border: none;
+    background-color: #5eb96a;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.bola1 {
+    border: none;
+    background-color: #dffce3;
+    text-align: center;
+    padding: 20px 0;
+    border-left: 10px solid #5eb96a;
+    border-right: 10px solid #5eb96a;
+    font-weight: bolder;
+    border-radius: 50px;
+}
+
+#aboutme {
+    margin-left: 50px;
+ }
 
 @media screen and (min-width:650px) {
      .section1 {
