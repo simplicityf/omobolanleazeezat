@@ -6,7 +6,7 @@
 body {
     background-color: rgb(228, 247, 234);
     color:  black;
-    overflow-x: hidden;
+    margin: 0 20px;
 }
 
 h1, h2, h3, h4, strong {
@@ -21,13 +21,21 @@ p, a, ul li {
     font-weight: bold;
 }
 
-#skills{
-    margin-left: 18px;
-    margin-right: 18px;
+a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 .pdf {
     color: rgb(1, 56, 10);
+}
+
+.navbar{
+    height: 50px;
 }
 
 .imglogo {
@@ -99,62 +107,6 @@ button {
     border-right: 3px solid #088118;
 }
 
-.main {
-    background-color:rgb(228, 247, 234);
-    padding: 3rem 0;
-}
-
-.slide-contain{
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-
-section {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    
-}
-
-section::-webkit-scrollbar{
-    height: 5px;
-    width: 2px;
-    border: 1px solid grey;
-    background-color: grey;
-}
-
-section::-webkit-scrollbar-track{
-   --webkit-box-shadow: inset 0 0 6px rgba(1, 56, 10, .3);
-}
-
-section::-webkit-scrollbar-thumb{
-    background-color: #088118;
-    outline: 1px solid ghostwhite;
-}
-
-section .thumb {
-    flex: 0 0 auto;
-    object-fit: cover;
-    margin: 5px;
-    border: 1px solid gray;
-    border-radius: 3px;
-    overflow: hidden;
-    transform: scale(.95);
-    transition: all .3s;
-    height: 60vh;
-}
-
-section .thumb:hover {
-    transform: scale(1);
-}
-
 .bola {
     border: none;
     background-color: #5eb96a;
@@ -167,38 +119,28 @@ section .thumb:hover {
     background-color: #dffce3;
     text-align: center;
     padding: 20px 0;
-    border-left: 10px solid #5eb96a;
-    border-right: 10px solid #5eb96a;
+    border-left: 2px solid #5eb96a;
+    border-right: 2px solid #5eb96a;
     font-weight: bolder;
-    border-radius: 50px;
+    border-radius: 10px;
+    margin: 4px;
 }
 
 #aboutme {
-    margin-left: 50px;
+    margin-top: 100px;
  }
 
-@media screen and (min-width:650px) {
-     .section1 {
-        grid-template-columns: 45% 45%;
-        grid-column-gap: 100px;
-     }
+ .images1{
+    border:none;
+ }
 
-     #aboutme {
-        margin-top: 150px;
-     }
+ .images1 img{
+    height: 60vh;
+    width: 100%;
+    margin: 10px;
+ }
 
-    #myimg {
-        width:70%;
-        
-    }
-    
-}
-
-@media screen and (min-width:500px) {
-
-    #aboutme {
-       margin-top: 100px;
-    }
-
-}
-    
+ .app{
+    font-size: 20px;
+    margin: 0 5px;
+ }
