@@ -1,4 +1,4 @@
-# my name is Azeezat Nasi
+# my name is Azeezat Omobolanle Nasir
 # i have always want to  be a developer
 # luckily i rolled with a friend who is also a developer.
 # i asked him how to get started, and he told me.
